@@ -1,0 +1,151 @@
+/* Variables */
+/* Global */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a::hover {
+  cursor: pointer;
+}
+
+body {
+  font-size: 10px;
+  background-image: url("https://i.postimg.cc/gk7XmgsQ/cut-mae-mu-a-Zf-MW0h-Sn-QI-unsplash-S.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Header */
+.grid-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 35% 10% 10%;
+      grid-template-columns: 45% 35% 10% 10%;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
+}
+
+.grid-wrapper .item {
+  font-size: 2em;
+  min-height: 5em;
+}
+
+.grid-wrapper .logo {
+  /* wycentrowanie obrazka i napisu w pionie*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* wycentrowanie w poziomie w danym divie
+        justify-content: center;
+        */
+}
+
+.grid-wrapper .logo-picture {
+  min-height: 3em;
+  max-height: 4em;
+  display: block;
+  margin-left: 2em;
+}
+
+.grid-wrapper .logo-page {
+  font-size: 1.2em;
+  display: block;
+  margin-left: 0.7em;
+}
+
+/*Menu*/
+.item ul {
+  list-style-type: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.item li {
+  float: left;
+  padding: 0.5em;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+header a {
+  font-size: 1em;
+  color: #070304;
+  padding-bottom: 0.4em;
+}
+
+header a:hover {
+  border-bottom: 3px solid #A60303;
+}
+
+.language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+/* About me */
+.grid-about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 60% 10%;
+      grid-template-columns: 30% 60% 10%;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+  margin-top: 5em;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.grid-about .picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid-about .foto {
+  min-width: 50%;
+  max-width: 90%;
+  margin: 2em auto auto 2em;
+}
+
+.grid-about .page-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5em;
+  margin: 0.5em 0.5em auto 0.5em;
+  border-bottom: 3px solid #A60303;
+}
+
+.grid-about .item p {
+  padding: 1em;
+  font-size: 1.7em;
+}
+/*# sourceMappingURL=style.css.map */

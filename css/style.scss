@@ -1,0 +1,124 @@
+/* Variables */
+$font-elements: 'Great Vibes', cursive;
+$font-main: 'Roboto', sans-serif;
+$color-red-medium: #A60303;
+$color-grey: #EAEAEC;
+$color-black: #070304;
+
+/* Global */
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+a::hover{
+    cursor: pointer;
+}
+
+body {
+    font-size:10px;
+    background-image: url('https://i.postimg.cc/gk7XmgsQ/cut-mae-mu-a-Zf-MW0h-Sn-QI-unsplash-S.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: $font-main;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* Header */
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 45% 35% 10% 10%;
+    grid-template-rows: 1;
+
+    .item {
+        font-size: 2em;
+        min-height: 5em;
+    }
+    .logo {
+        /* wycentrowanie obrazka i napisu w pionie*/
+        display: flex;
+        align-items: center;
+        /* wycentrowanie w poziomie w danym divie
+        justify-content: center;
+        */
+    }
+    .logo-picture{
+        min-height: 3em;
+        max-height: 4em;
+        display: block;
+        margin-left: 2em;
+    }
+    .logo-page {
+        font-size: 1.2em;
+        display: block;
+        margin-left: 0.7em;
+    }
+}
+
+    /*Menu*/
+    .item {
+        ul {
+                list-style-type: none;
+                justify-content: space-between;
+            }
+
+            li {
+                float: left;
+                padding: 0.5em;
+            }
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: right;
+    }
+    header {
+        a {
+        font-size:1em;
+        color:#070304;
+        padding-bottom: 0.4em;
+        }
+        a:hover{
+        border-bottom: 3px solid $color-red-medium;
+        }
+    }
+    .language {
+        display: flex;
+        justify-content: right;
+    }
+    
+
+/* About me */
+.grid-about {
+    display: grid;
+    grid-template-columns: 30% 60% 10%;
+    grid-template-rows: 2;
+    margin-top: 5em;
+    background-color: rgba($color: white, $alpha: 0.6);
+    .picture {
+        display: flex;
+        align-items: center;
+    }
+    .foto {
+        min-width: 50%;
+        max-width: 90%;
+        margin: 2em auto auto 2em;
+    }
+    .page-title {
+        font-family: $font-elements; 
+        font-size: 3.5em;
+        margin: 0.5em 0.5em auto 0.5em;
+        border-bottom: 3px solid $color-red-medium;
+    }
+
+    .item {
+        p {
+            padding: 1em;
+            font-size: 1.7em;
+        }
+    }
+}
