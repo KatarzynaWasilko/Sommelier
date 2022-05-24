@@ -242,4 +242,30 @@ textarea {
   color: #A60303;
   display: block;
 }
+
+/* Footer*/
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1;
+      grid-template-columns: 1;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #A60303;
+  font-size: 1.7em;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.container-width {
+  text-align: center;
+  color: #EAEAEC;
+}
+
+.footer-page {
+  color: #EAEAEC;
+}
 /*# sourceMappingURL=style.css.map */

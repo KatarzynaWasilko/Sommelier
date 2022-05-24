@@ -161,7 +161,6 @@ form {
 input, textarea {
     display: block;
     background-color: #EAEAEC;
-    
 }
 textarea {
     color:#A60303;
@@ -184,7 +183,7 @@ textarea {
     display: grid;
     justify-content: center;
     padding: 2em;
-    
+
     .fa-brands {
     font-size: 30px;
     width: 60px;
@@ -196,4 +195,23 @@ textarea {
     color:#A60303;
     display: block;
     }
+}
+
+/* Footer*/ 
+footer {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: 1;
+    align-items: center;
+    background-color:#A60303;
+    font-size: 1.7em;
+    height: 50px;
+    margin-top: 50px;
+}
+.container-width {
+    text-align: center;
+    color:#EAEAEC;
+}
+.footer-page {
+    color:#EAEAEC;
 }
