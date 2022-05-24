@@ -29,7 +29,7 @@ body {
 }
 
 /* Header */
-.grid-wrapper {
+.grid-menu {
     display: grid;
     grid-template-columns: 45% 35% 10% 10%;
     grid-template-rows: 1;
@@ -96,7 +96,7 @@ body {
 .grid-about {
     display: grid;
     grid-template-columns: 30% 60% 10%;
-    grid-template-rows: 2;
+    grid-template-rows: 1;
     margin-top: 5em;
     background-color: rgba($color: white, $alpha: 0.6);
     .picture {
@@ -108,17 +108,44 @@ body {
         max-width: 90%;
         margin: 2em auto auto 2em;
     }
-    .page-title {
-        font-family: $font-elements; 
-        font-size: 3.5em;
-        margin: 0.5em 0.5em auto 0.5em;
-        border-bottom: 3px solid $color-red-medium;
+    
+}
+.page-title {
+    font-family: $font-elements; 
+    font-size: 4em;
+    font-weight: lighter;
+    margin: 0.5em 0.5em auto 0.5em;
+    border-bottom: 3px solid $color-red-medium;
+}
+.item {
+    p {
+        padding: 1em;
+        font-size: 1.7em;
+    }
+}
+
+/* Wine */
+.grid {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 3;
+    margin-top: 5em;
+    background-color: rgba($color: white, $alpha: 0.6);
+
+    p {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        padding: 1em 1em 0.5em 1em;
+        font-size: 1.7em;
+    }
+    .blog {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        padding: 0.5em 1em 1em 1em;
+        font-size: 1.7em;
+        color:#A60303;
+        display: grid;
+        justify-content: end;
     }
 
-    .item {
-        p {
-            padding: 1em;
-            font-size: 1.7em;
-        }
-    }
 }
