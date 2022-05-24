@@ -143,6 +143,7 @@ header a:hover {
   font-weight: lighter;
   margin: 0.5em 0.5em auto 0.5em;
   border-bottom: 3px solid #A60303;
+  grid-column: 1/-2;
 }
 
 .item p {
@@ -182,5 +183,63 @@ header a:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+}
+
+/* Contact */
+.contact {
+  -ms-grid-columns: 70% 20% 10%;
+      grid-template-columns: 70% 20% 10%;
+}
+
+form {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 2em;
+}
+
+input, textarea {
+  display: block;
+  background-color: #EAEAEC;
+}
+
+textarea {
+  color: #A60303;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.submit {
+  background-color: #A60303;
+  height: 30px;
+  width: 50px;
+  border: none;
+  color: #EAEAEC;
+  margin-top: 2em;
+}
+
+.social-media {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em;
+}
+
+.social-media .fa-brands {
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  border: 3px solid #A60303;
+  text-align: center;
+  color: #A60303;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
